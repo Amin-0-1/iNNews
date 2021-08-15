@@ -10,6 +10,6 @@ target 'KNews' do
     pod 'RxCocoa'
     pod 'RxDataSources'
     pod 'SDWebImage'
-    pod 'Toast'
+    pod 'Toast-Swift'
 
 end

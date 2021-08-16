@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +19,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IC1-WL-gG1">
-                        <rect key="frame" x="0.0" y="0.0" width="538" height="190"/>
+                        <rect key="frame" x="0.0" y="0.0" width="533" height="190"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="McG-tM-0uv">
                                 <rect key="frame" x="8" y="8" width="125" height="150"/>
@@ -26,6 +27,11 @@
                                     <constraint firstAttribute="height" constant="150" id="YkZ-PA-HnK"/>
                                     <constraint firstAttribute="width" constant="125" id="ikM-Oj-SBk"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="df7-J7-hMT">
                                 <rect key="frame" x="8" y="161.5" width="125" height="20.5"/>
@@ -34,19 +40,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVI-BI-KNK">
-                                <rect key="frame" x="141" y="8" width="389" height="45.5"/>
+                                <rect key="frame" x="141" y="8" width="384" height="45.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILJ-8e-Q5c">
-                                <rect key="frame" x="141" y="57" width="389" height="101"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="ILJ-8e-Q5c">
+                                <rect key="frame" x="141" y="57" width="384" height="101"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvH-J2-S2O">
-                                <rect key="frame" x="141" y="161.5" width="389" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="kvH-J2-S2O">
+                                <rect key="frame" x="141" y="161.5" width="384" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -71,12 +77,26 @@
                             <constraint firstAttribute="bottom" secondItem="df7-J7-hMT" secondAttribute="bottom" constant="8" id="rqJ-Gq-Cn9"/>
                             <constraint firstItem="df7-J7-hMT" firstAttribute="trailing" secondItem="McG-tM-0uv" secondAttribute="trailing" id="xuI-OJ-abl"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                <size key="value" width="5" height="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="IC1-WL-gG1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0ZN-Vf-Myr"/>
                     <constraint firstItem="IC1-WL-gG1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4TL-AB-enw"/>
-                    <constraint firstAttribute="trailing" secondItem="IC1-WL-gG1" secondAttribute="trailing" id="nyD-MD-zn2"/>
+                    <constraint firstAttribute="trailing" secondItem="IC1-WL-gG1" secondAttribute="trailing" constant="5" id="nyD-MD-zn2"/>
                     <constraint firstAttribute="bottom" secondItem="IC1-WL-gG1" secondAttribute="bottom" constant="10" id="pc0-fG-Nd5"/>
                 </constraints>
             </tableViewCellContentView>
@@ -88,7 +108,7 @@
                 <outlet property="uiSource" destination="kvH-J2-S2O" id="Gdr-JH-GF7"/>
                 <outlet property="uiTitle" destination="gVI-BI-KNK" id="Mqa-gY-04z"/>
             </connections>
-            <point key="canvasLocation" x="260.86956521739131" y="87.723214285714278"/>
+            <point key="canvasLocation" x="67" y="56"/>
         </tableViewCell>
     </objects>
     <resources>

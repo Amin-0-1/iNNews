@@ -16,20 +16,18 @@ class NewsItemCell: UITableViewCell {
     @IBOutlet var uiDescription: UILabel!
     @IBOutlet var uiSource: UILabel!
     
-    var bindNewsItem: NewsItem!{
-        didSet{
-            selectionStyle = .none
+    func bindNewsItem(item:NewsItem) {
+        selectionStyle = .none
 
-            uiTitle.text = bindNewsItem.title ?? "Title"
-            uiAuthor.text = bindNewsItem.author ?? "Auther"
-            uiDescription.text = bindNewsItem.description ?? "This is description of the news item"
-            uiSource.text = bindNewsItem.url
-            
-            uiImage.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
-            uiImage.sd_setImage(with: URL(string: bindNewsItem.urlToImage ?? ""), placeholderImage: UIImage(named: "placeholder"))
-        }
+        uiTitle.text = item.title ?? "Title"
+        uiAuthor.text = item.author ?? "Auther"
+        uiDescription.text = item.description ?? "This is description of the news item"
+        uiSource.text = item.url
         
+        uiImage.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
+        uiImage.sd_setImage(with: URL(string: item.urlToImage ?? ""), placeholderImage: UIImage(named: "placeholder"))
     }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         

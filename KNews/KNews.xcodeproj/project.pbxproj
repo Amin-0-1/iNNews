@@ -25,6 +25,8 @@
 		27634B3626C99FC200751E5D /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27634B3526C99FC200751E5D /* Repo.swift */; };
 		27634B3A26C99FFB00751E5D /* NewsRepoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27634B3926C99FFB00751E5D /* NewsRepoType.swift */; };
 		27634B3D26C9AC5200751E5D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27634B3C26C9AC5200751E5D /* Const.swift */; };
+		27634B4C26C9CDBD00751E5D /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27634B4B26C9CDBD00751E5D /* SectionModel.swift */; };
+		27634B4F26C9EAC600751E5D /* CustomDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27634B4E26C9EAC600751E5D /* CustomDate.swift */; };
 		9244A68FB2C0F9CE56FA09C7 /* Pods_KNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF714D353B0A20C237F275D4 /* Pods_KNews.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		27634B3526C99FC200751E5D /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		27634B3926C99FFB00751E5D /* NewsRepoType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRepoType.swift; sourceTree = "<group>"; };
 		27634B3C26C9AC5200751E5D /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		27634B4B26C9CDBD00751E5D /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		27634B4E26C9EAC600751E5D /* CustomDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDate.swift; sourceTree = "<group>"; };
 		3F6AC5C5A6827BC4BC447383 /* Pods-KNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNews.debug.xcconfig"; path = "Target Support Files/Pods-KNews/Pods-KNews.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B492E6BDCA6F3CE9C54B2F /* Pods-KNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNews.release.xcconfig"; path = "Target Support Files/Pods-KNews/Pods-KNews.release.xcconfig"; sourceTree = "<group>"; };
 		DF714D353B0A20C237F275D4 /* Pods_KNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +193,8 @@
 		273EEF4626C96BC900351AF4 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				27634B4E26C9EAC600751E5D /* CustomDate.swift */,
+				27634B4B26C9CDBD00751E5D /* SectionModel.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -406,10 +412,12 @@
 				27634B2526C994DD00751E5D /* ApiServices.swift in Sources */,
 				27634B2826C994DD00751E5D /* RemoteDataSourceWrapper.swift in Sources */,
 				27634B3626C99FC200751E5D /* Repo.swift in Sources */,
+				27634B4F26C9EAC600751E5D /* CustomDate.swift in Sources */,
 				27634B2726C994DD00751E5D /* Remotedatasource.swift in Sources */,
 				273EEF6326C9735000351AF4 /* ListNewsVC.swift in Sources */,
 				27634B1C26C985A200751E5D /* ListNewsUsecase.swift in Sources */,
 				273EEF6E26C974D800351AF4 /* NewsItemCell.swift in Sources */,
+				27634B4C26C9CDBD00751E5D /* SectionModel.swift in Sources */,
 				273EEF2926C96A2B00351AF4 /* AppDelegate.swift in Sources */,
 				27634B2626C994DD00751E5D /* ApiRequestWrapper.swift in Sources */,
 				27634B2926C994DD00751E5D /* AllNews+Codable.swift in Sources */,
@@ -566,6 +574,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2V5XRSDP4C;
 				INFOPLIST_FILE = KNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -586,6 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2V5XRSDP4C;
 				INFOPLIST_FILE = KNews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

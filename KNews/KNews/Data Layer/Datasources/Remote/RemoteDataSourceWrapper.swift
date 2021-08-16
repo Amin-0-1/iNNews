@@ -37,7 +37,7 @@ extension RemoteDataSourceWrapper :ApiRequestWrapper{
         switch self {
         case .AllNews(let page,let start,let end):
             
-            return "https://newsapi.org/v2/everything?q=technology&from=\(start)&to=\(end)&apiKey=\(Const.APIKEY)&page=\(page)"
+            return "https://newsapi.org/v2/everything?q=technology&from=\(start)&to=\(end)&apiKey=\(Const.APIKEY)&page=\(page)&sortBy=publishedAt"
             
         }
         

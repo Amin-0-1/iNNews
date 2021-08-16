@@ -23,7 +23,8 @@ class ListNewsUsecase : ListNewsUCType{
 
             switch result{
             case .success(let data):
-                let articles = self.getResponseFromDataObject(data: data)
+                var articles = self.getResponseFromDataObject(data: data)
+                self.unifyDate(for:&articles)
                 completion(.success(articles))
             case .failure(let error):
                 completion(.failure(error))
@@ -57,4 +58,11 @@ class ListNewsUsecase : ListNewsUCType{
         return response.articles
     }
     
+    private func unifyDate(for items: inout [NewsItem]){
+        for index in items.indices{
+            items[index].publishedAt = items[index].publishedAt?.toDate(WithFormate: .d_MMM_yyyy)
+        }
+    }
+    
 }
+

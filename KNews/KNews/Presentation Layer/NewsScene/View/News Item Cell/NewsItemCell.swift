@@ -22,7 +22,12 @@ class NewsItemCell: UITableViewCell {
         uiTitle.text = item.title ?? "Title"
         uiAuthor.text = item.author ?? "Auther"
         uiDescription.text = item.description ?? "This is description of the news item"
-        uiSource.text = item.url
+        
+        uiSource.text = " \(item.url ?? "invalid URL") "
+        uiSource.backgroundColor = .systemBlue
+        uiSource.textColor = .white
+        uiSource.layer.cornerRadius = uiSource.frame.height / 2
+        uiSource.layer.masksToBounds = true
         
         uiImage.sd_imageIndicator = SDWebImageActivityIndicator.grayLarge
         uiImage.sd_setImage(with: URL(string: item.urlToImage ?? ""), placeholderImage: UIImage(named: "placeholder"))

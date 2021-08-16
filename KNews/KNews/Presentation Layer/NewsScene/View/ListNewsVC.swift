@@ -15,7 +15,7 @@ class ListNewsVC: UIViewController {
     @IBOutlet var uiTableView: UITableView!
     @IBOutlet var uiEmptyImage: UIImageView!
     
-    private var viewModel : ListNewsType!
+    var viewModel : ListNewsType!
     private var bag: DisposeBag!
     
     
@@ -38,7 +38,7 @@ class ListNewsVC: UIViewController {
         bind()
 
 
-        viewModel.fetchNewsData()
+        viewModel.fetchNewsData(pagination: false)
         uiTableView.rx.setDelegate(self).disposed(by: bag)
 
     }
@@ -52,13 +52,16 @@ class ListNewsVC: UIViewController {
         
         viewModel.showError.asObservable().bind{ [unowned self] msg in
             view.makeToast(msg, duration: 3.0, position: .top)
+            self.uiTableView.tableFooterView = nil
         }.disposed(by: bag)
         
         viewModel.listNews.asObservable().bind(to: self.uiTableView.rx.items(dataSource: self.dataSource)).disposed(by: bag)
         
         viewModel.listNews.asObservable().bind{ items in
-            print("--------------",items.count)
             self.uiTableView.isHidden =  items.isEmpty ? true : false
+            self.uiTableView.tableFooterView = nil
+            ListNewsVC.isPaginating = false
+
         }.disposed(by: bag)
         
         dataSource.titleForHeaderInSection = { dataSource, index in
@@ -67,18 +70,6 @@ class ListNewsVC: UIViewController {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 extension ListNewsVC: UITableViewDelegate{
     

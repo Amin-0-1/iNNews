@@ -9,16 +9,27 @@ import Foundation
 
 
 protocol ListNewsUCType {
-    func fetchNews(page: Int,completion: @escaping (Result<[NewsItem], Error>) -> Void)
+    func fetchNews(pagination: Bool,completion: @escaping (Result<[NewsItem], Error>) -> Void)
 }
 class ListNewsUsecase : ListNewsUCType{
     private var repo : NewsRepoType!
-
+    static var page = 1
+    
     init(repo : NewsRepoType) {
         self.repo = repo
     }
-    func fetchNews(page: Int,completion: @escaping (Result<[NewsItem], Error>) -> Void){
-        repo.fetchNews(page: page, fromDate: getCurrentDate(), toDate: getDesiredDate()) { [weak self](result) in
+    
+    func fetchNews(pagination: Bool,completion: @escaping (Result<[NewsItem], Error>) -> Void){
+        ListNewsUsecase.page = pagination ? ListNewsUsecase.page + 1 : ListNewsUsecase.page
+        
+        
+        print("+++++++++",ListNewsUsecase.page)
+        guard ListNewsUsecase.page <= 5 else {
+            ListNewsUsecase.page  =  ListNewsUsecase.page - 1
+            completion(.success([]))
+            return
+        }
+        repo.fetchNews(page: ListNewsUsecase.page, fromDate: getCurrentDate(), toDate: getDesiredDate()) { [weak self](result) in
             guard let self = self else { return }
 
             switch result{

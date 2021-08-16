@@ -17,7 +17,7 @@ protocol ListNewsType {
     var showError: Driver<String>{get}
     var listNews: Driver<[SectionModel]>{get}
     
-    func fetchNewsData()
+    func fetchNewsData(pagination:Bool)
     
 }
 
@@ -33,6 +33,8 @@ class ListNewsVM : ListNewsType{
     
     private var listNewsUsecase: ListNewsUCType!
     private let monitor : NWPathMonitor!
+    private var listOfNews = [NewsItem]()
+    
     init() {
         listNewsUsecase = ListNewsUsecase(repo: Repo(remote: Remotedatasource()))
         
@@ -43,45 +45,50 @@ class ListNewsVM : ListNewsType{
         monitor = NWPathMonitor()
         
     }
-    func fetchNewsData() {
+
+    func fetchNewsData(pagination:Bool) {
         monitor.pathUpdateHandler = { [weak self] handler in
             
             guard let self = self else { return }
-            self.loadingSubject.onNext(true)
+            pagination ? nil : self.loadingSubject.onNext(true)
 
             if handler.status == .satisfied {
                 
-                self.listNewsUsecase.fetchNews(page: 1) {  [weak self] (result) in
+                self.listNewsUsecase.fetchNews(pagination: pagination) {  [weak self] (result) in
                     guard let self = self else { return }
-                    self.loadingSubject.onNext(false)
-                    
+                    pagination ? nil : self.loadingSubject.onNext(false)
+
                     switch result {
                     case .failure(let error):
                         self.showErrorSubject.onNext(error.localizedDescription)
                         self.listNewsSubject.onNext([])
                     case .success(let news):
+                        
+                        guard !news.isEmpty else {
+                            self.showErrorSubject.onNext("No Further News!!")
+                            return
+                        }
+                        self.listOfNews.append(contentsOf: news)
+                        
                         var sectiondData = [SectionModel]()
                         
-                        let dates = Set(news.compactMap{ news in
+                        let dates = Set(self.listOfNews.compactMap{ news in
                             news.publishedAt
                         })
                         
-                        print("+++++++++++++",dates.count)
                         dates.forEach { (date) in
-                            let items = news.filter { (new) -> Bool in
+                            let items = self.listOfNews.filter { (new) -> Bool in
                                 new.publishedAt == date
                             }
                             sectiondData.append(SectionModel(header: date, items: items))
                         }
-                        print("+++++++++++++",sectiondData.count)
-                        
-                        
                         self.listNewsSubject.onNext(sectiondData)
                     }
                     
                 }
             }else{
-                self.loadingSubject.onNext(false)
+                ListNewsUsecase.page = 1
+                pagination ? nil : self.loadingSubject.onNext(false)
                 self.showErrorSubject.onNext("No Intenet Connection!!")
                 self.listNewsSubject.onNext([])
                 

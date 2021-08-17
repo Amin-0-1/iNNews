@@ -35,11 +35,22 @@ class ListNewsVC: UIViewController {
         
         viewModel = ListNewsVM(useCase: ListNewsUsecase(repo: Repo(remote: Remotedatasource())))
         bind()
-
+        setupSearchBar()
 
         viewModel.fetchNewsData(pagination: false)
         uiTableView.rx.setDelegate(self).disposed(by: bag)
 
+    }
+    
+    func setupSearchBar() {
+        
+        let sc = UISearchController(searchResultsController: nil)
+        sc.searchResultsUpdater = self
+        sc.delegate = self
+        sc.obscuresBackgroundDuringPresentation = false
+        sc.searchBar.placeholder = "Search for something eg CNN"
+        
+        navigationItem.searchController = sc
     }
     
     func bind() {
@@ -52,6 +63,7 @@ class ListNewsVC: UIViewController {
         viewModel.showError.asObservable().bind{ [unowned self] msg in
             view.makeToast(msg, duration: 3.0, position: .top)
             self.uiTableView.tableFooterView = nil
+            ListNewsVC.isPaginating = false
         }.disposed(by: bag)
         
         viewModel.listNews.asObservable().bind(to: self.uiTableView.rx.items(dataSource: self.dataSource)).disposed(by: bag)
@@ -96,3 +108,18 @@ extension ListNewsVC: UITableViewDelegate{
     }
 }
 
+
+// MARK: - UISearchResult Updating and UISearchControllerDelegate  Extension
+  extension ListNewsVC: UISearchResultsUpdating, UISearchControllerDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        
+        if text.isEmpty{
+            viewModel.getCurrentNews()
+        }else{
+            viewModel.searchNews(with: text)
+        }
+
+
+    }
+ }

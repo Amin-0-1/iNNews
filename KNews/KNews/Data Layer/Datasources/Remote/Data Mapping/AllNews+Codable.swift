@@ -14,7 +14,11 @@ struct AllNewsResponse: Decodable{
     
 }
 
-struct NewsItem: Decodable {
+struct NewsItem: Decodable ,Hashable{
+    static func == (lhs: NewsItem, rhs: NewsItem) -> Bool {
+        return lhs.url == rhs.url
+    }
+    
     var source: Source?
     var author: String?
     var title: String?
@@ -25,7 +29,7 @@ struct NewsItem: Decodable {
     var content: String?
 }
 
-struct Source: Decodable {
+struct Source: Decodable, Hashable {
     var name:String?
     var id:String?
 }

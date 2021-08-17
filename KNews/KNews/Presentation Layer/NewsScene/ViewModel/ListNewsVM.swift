@@ -18,6 +18,8 @@ protocol ListNewsType {
     var listNews: Driver<[SectionModel]>{get}
     
     func fetchNewsData(pagination:Bool)
+    func searchNews(with query: String)
+    func getCurrentNews()
     
 }
 
@@ -33,7 +35,6 @@ class ListNewsVM : ListNewsType{
     
     private var listNewsUsecase: ListNewsUCType!
     private let monitor : NWPathMonitor!
-    private var listOfNews = [NewsItem]()
     
     init(useCase: ListNewsUCType) {
         listNewsUsecase = useCase
@@ -68,21 +69,7 @@ class ListNewsVM : ListNewsType{
                             self.showErrorSubject.onNext("No Further News!!")
                             return
                         }
-                        self.listOfNews.append(contentsOf: news)
-                        
-                        var sectiondData = [SectionModel]()
-                        
-                        let dates = Set(self.listOfNews.compactMap{ news in
-                            news.publishedAt
-                        })
-                        
-                        dates.forEach { (date) in
-                            let items = self.listOfNews.filter { (new) -> Bool in
-                                new.publishedAt == date
-                            }
-                            sectiondData.append(SectionModel(header: date, items: items))
-                        }
-                        self.listNewsSubject.onNext(sectiondData)
+                        self.listNewsSubject.onNext(news)
                     }
                     
                 }
@@ -96,9 +83,22 @@ class ListNewsVM : ListNewsType{
             
         }
         monitor.start(queue: DispatchQueue(label: "monitor"))
-        
-        
     }
+    
+    func searchNews(with query: String) {
+        listNewsUsecase.searchNews(with: query) { [weak self] (sectionModels) in
+            guard let self = self else { return }
+            self.listNewsSubject.onNext(sectionModels)
+        }
+    }
+    
+    func getCurrentNews() {
+        listNewsUsecase.getCurrentNews { (sectionModels) in
+            listNewsSubject.onNext(sectionModels)
+        }
+    }
+    
+    
     
     
 }

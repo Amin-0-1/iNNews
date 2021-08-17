@@ -25,7 +25,7 @@ This repo for an iOS application that shows up the latest news
 # ScreenShots
 main | Details
 ---  | ---
-<img src="images/1.png" width="500" height="600">  | <img src="images/2.png" width="500" height="600"> 
+<img src="KNews/images/1.png" width="250" height="600">  | <img src="KNews/images/2.png" width="250" height="600"> 
 
 
 ***
@@ -37,7 +37,7 @@ git clone https://github.com/Amin-0-1/Kadabra_iOS_Task.git
 ```
 * open terminal in project dir
 ```
-cd INNews
+cd Project
 pod install
 pod update
 ```

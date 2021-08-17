@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273E56A526CB26EF001B0D55 /* FakeRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273E56A426CB26EF001B0D55 /* FakeRepo.swift */; };
 		273EEF2926C96A2B00351AF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273EEF2826C96A2B00351AF4 /* AppDelegate.swift */; };
 		273EEF2B26C96A2B00351AF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273EEF2A26C96A2B00351AF4 /* SceneDelegate.swift */; };
 		273EEF3026C96A2B00351AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273EEF2E26C96A2B00351AF4 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		273EEF6326C9735000351AF4 /* ListNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273EEF6226C9735000351AF4 /* ListNewsVC.swift */; };
 		273EEF6E26C974D800351AF4 /* NewsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273EEF6C26C974D800351AF4 /* NewsItemCell.swift */; };
 		273EEF6F26C974D800351AF4 /* NewsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273EEF6D26C974D800351AF4 /* NewsItemCell.xib */; };
+		274B348326CB261B00EE1171 /* ListNewsVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B348226CB261B00EE1171 /* ListNewsVMTests.swift */; };
 		275AB66126CAFB1300C0E39D /* ListNewsVC + Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275AB66026CAFB1300C0E39D /* ListNewsVC + Pagination.swift */; };
 		275AB66E26CB135600C0E39D /* DetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275AB66A26CB135600C0E39D /* DetailsVM.swift */; };
 		275AB66F26CB135600C0E39D /* DetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 275AB66C26CB135600C0E39D /* DetailsVC.xib */; };
@@ -35,7 +37,18 @@
 		9244A68FB2C0F9CE56FA09C7 /* Pods_KNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF714D353B0A20C237F275D4 /* Pods_KNews.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		274B347B26CB25F400EE1171 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 273EEF1D26C96A2B00351AF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 273EEF2426C96A2B00351AF4;
+			remoteInfo = KNews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		273E56A426CB26EF001B0D55 /* FakeRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRepo.swift; sourceTree = "<group>"; };
 		273EEF2526C96A2B00351AF4 /* KNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		273EEF2826C96A2B00351AF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		273EEF2A26C96A2B00351AF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +59,9 @@
 		273EEF6226C9735000351AF4 /* ListNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsVC.swift; sourceTree = "<group>"; };
 		273EEF6C26C974D800351AF4 /* NewsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsItemCell.swift; sourceTree = "<group>"; };
 		273EEF6D26C974D800351AF4 /* NewsItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsItemCell.xib; sourceTree = "<group>"; };
+		274B347626CB25F400EE1171 /* KNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274B347A26CB25F400EE1171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274B348226CB261B00EE1171 /* ListNewsVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNewsVMTests.swift; sourceTree = "<group>"; };
 		275AB66026CAFB1300C0E39D /* ListNewsVC + Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListNewsVC + Pagination.swift"; sourceTree = "<group>"; };
 		275AB66A26CB135600C0E39D /* DetailsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVM.swift; sourceTree = "<group>"; };
 		275AB66C26CB135600C0E39D /* DetailsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailsVC.xib; sourceTree = "<group>"; };
@@ -77,6 +93,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		274B347326CB25F400EE1171 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,10 +112,19 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		273E56A326CB26DD001B0D55 /* Fake repo */ = {
+			isa = PBXGroup;
+			children = (
+				273E56A426CB26EF001B0D55 /* FakeRepo.swift */,
+			);
+			path = "Fake repo";
+			sourceTree = "<group>";
+		};
 		273EEF1C26C96A2B00351AF4 = {
 			isa = PBXGroup;
 			children = (
 				273EEF2726C96A2B00351AF4 /* KNews */,
+				274B347726CB25F400EE1171 /* KNewsTests */,
 				273EEF2626C96A2B00351AF4 /* Products */,
 				0700785158414CEC0E469ED7 /* Pods */,
 				D5BF68A34D863678E7DC351D /* Frameworks */,
@@ -103,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				273EEF2526C96A2B00351AF4 /* KNews.app */,
+				274B347626CB25F400EE1171 /* KNewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +304,16 @@
 			path = "News Item Cell";
 			sourceTree = "<group>";
 		};
+		274B347726CB25F400EE1171 /* KNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				273E56A326CB26DD001B0D55 /* Fake repo */,
+				274B347A26CB25F400EE1171 /* Info.plist */,
+				274B348226CB261B00EE1171 /* ListNewsVMTests.swift */,
+			);
+			path = KNewsTests;
+			sourceTree = "<group>";
+		};
 		275AB65F26CAFB0200C0E39D /* Pagination */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,6 +397,24 @@
 			productReference = 273EEF2526C96A2B00351AF4 /* KNews.app */;
 			productType = "com.apple.product-type.application";
 		};
+		274B347526CB25F400EE1171 /* KNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274B347F26CB25F400EE1171 /* Build configuration list for PBXNativeTarget "KNewsTests" */;
+			buildPhases = (
+				274B347226CB25F400EE1171 /* Sources */,
+				274B347326CB25F400EE1171 /* Frameworks */,
+				274B347426CB25F400EE1171 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274B347C26CB25F400EE1171 /* PBXTargetDependency */,
+			);
+			name = KNewsTests;
+			productName = KNewsTests;
+			productReference = 274B347626CB25F400EE1171 /* KNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -365,6 +426,10 @@
 				TargetAttributes = {
 					273EEF2426C96A2B00351AF4 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					274B347526CB25F400EE1171 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 273EEF2426C96A2B00351AF4;
 					};
 				};
 			};
@@ -382,6 +447,7 @@
 			projectRoot = "";
 			targets = (
 				273EEF2426C96A2B00351AF4 /* KNews */,
+				274B347526CB25F400EE1171 /* KNewsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -396,6 +462,13 @@
 				273EEF3226C96A2B00351AF4 /* Assets.xcassets in Resources */,
 				273EEF3026C96A2B00351AF4 /* Main.storyboard in Resources */,
 				275AB66F26CB135600C0E39D /* DetailsVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274B347426CB25F400EE1171 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,7 +544,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		274B347226CB25F400EE1171 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273E56A526CB26EF001B0D55 /* FakeRepo.swift in Sources */,
+				274B348326CB261B00EE1171 /* ListNewsVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		274B347C26CB25F400EE1171 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 273EEF2426C96A2B00351AF4 /* KNews */;
+			targetProxy = 274B347B26CB25F400EE1171 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		273EEF2E26C96A2B00351AF4 /* Main.storyboard */ = {
@@ -651,6 +741,46 @@
 			};
 			name = Release;
 		};
+		274B347D26CB25F400EE1171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2V5XRSDP4C;
+				INFOPLIST_FILE = KNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.KNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KNews.app/KNews";
+			};
+			name = Debug;
+		};
+		274B347E26CB25F400EE1171 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2V5XRSDP4C;
+				INFOPLIST_FILE = KNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amin.KNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KNews.app/KNews";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -668,6 +798,15 @@
 			buildConfigurations = (
 				273EEF3A26C96A2B00351AF4 /* Debug */,
 				273EEF3B26C96A2B00351AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274B347F26CB25F400EE1171 /* Build configuration list for PBXNativeTarget "KNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274B347D26CB25F400EE1171 /* Debug */,
+				274B347E26CB25F400EE1171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

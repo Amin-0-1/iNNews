@@ -14,6 +14,7 @@ PODS:
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
   - Toast-Swift (5.0.1)
+  - XLMediaZoom (2.0.1)
 
 DEPENDENCIES:
   - RxCocoa
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - RxSwift
   - SDWebImage
   - Toast-Swift
+  - XLMediaZoom
 
 SPEC REPOS:
   trunk:
@@ -31,6 +33,7 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - Toast-Swift
+    - XLMediaZoom
 
 SPEC CHECKSUMS:
   Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
@@ -40,7 +43,8 @@ SPEC CHECKSUMS:
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+  XLMediaZoom: 52f8f473066d0a3e09572fbee6c84f25c1ed0bca
 
-PODFILE CHECKSUM: 4dc11b2ca6439edaaa123c6b822c73ed3ca5330c
+PODFILE CHECKSUM: 6bceb8a1ef7a1e6431f9f9b4a9afc863812cd763
 
 COCOAPODS: 1.10.1

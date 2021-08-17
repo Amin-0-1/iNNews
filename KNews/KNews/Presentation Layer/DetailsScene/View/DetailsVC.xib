@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsVC" customModule="iNNNews" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsVC" customModule="KNews" customModuleProvider="target">
             <connections>
                 <outlet property="uiAuthor" destination="adE-R5-mON" id="4pH-jS-KOt"/>
                 <outlet property="uiDescription" destination="ItE-et-JIf" id="DUc-U7-D1n"/>

@@ -7,6 +7,8 @@
 
 import UIKit
 import SDWebImage
+import XLMediaZoom
+
 class DetailsVC: UIViewController {
 
     var itemNews: NewsItem!
@@ -30,7 +32,7 @@ class DetailsVC: UIViewController {
         
         uiTitle.text = itemNews.title ?? "Title"
         uiAuthor.text = itemNews.author ?? "Author"
-        uiPublishDate.text = viewModel.getFormattedPublishedAtDate(date: itemNews.publishedAt) ?? "Today"
+        uiPublishDate.text = itemNews.publishedAt ?? "Today"
         
         title = itemNews.author
     }

@@ -23,7 +23,6 @@ class ListNewsUsecase : ListNewsUCType{
         ListNewsUsecase.page = pagination ? ListNewsUsecase.page + 1 : ListNewsUsecase.page
         
         
-        print("+++++++++",ListNewsUsecase.page)
         guard ListNewsUsecase.page <= 5 else {
             ListNewsUsecase.page  =  ListNewsUsecase.page - 1
             completion(.success([]))

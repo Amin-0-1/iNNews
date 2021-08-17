@@ -32,9 +32,8 @@ class ListNewsVC: UIViewController {
         bag = DisposeBag()
 
         uiTableView.register(UINib(nibName: "NewsItemCell", bundle: nil), forCellReuseIdentifier: "newsItemCell")
-        uiTableView.register(CustomHeaderCell.self,forHeaderFooterViewReuseIdentifier: "sectionHeader")
         
-        viewModel = ListNewsVM()
+        viewModel = ListNewsVM(useCase: ListNewsUsecase(repo: Repo(remote: Remotedatasource())))
         bind()
 
 
@@ -64,6 +63,17 @@ class ListNewsVC: UIViewController {
 
         }.disposed(by: bag)
         
+        
+        uiTableView.rx.modelSelected(NewsItem.self).subscribe { [weak self] (item) in
+            guard let self = self else { return }
+            guard let item = item.element else { return }
+            
+            let detailsVC = DetailsVC.init(nibName: "DetailsVC", bundle: nil)
+            detailsVC.itemNews = item
+            self.navigationController?.pushViewController(detailsVC, animated: true)
+            
+        }.disposed(by: bag)
+        
         dataSource.titleForHeaderInSection = { dataSource, index in
             
             return " \(dataSource.sectionModels[index].header)  "
@@ -79,50 +89,10 @@ extension ListNewsVC: UITableViewDelegate{
             headerView.textLabel?.textColor = .black
             headerView.textLabel?.textAlignment = .center
             headerView.textLabel?.backgroundColor = .lightGray
-            headerView.textLabel?.layer.cornerRadius = headerView.textLabel!.frame.height / 2
+            headerView.textLabel?.layer.cornerRadius = 10
             headerView.textLabel?.font = UIFont.systemFont(ofSize: 15, weight: .bold)
         }
 
     }
 }
 
-class CustomHeaderCell: UITableViewHeaderFooterView {
-    var title = UILabel()
-    var view : UIView!
-    
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        view = UIView(frame: CGRect(x: 0, y: 0, width: 150, height: 50))
-        configureContents()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func configureContents() {
-        view.translatesAutoresizingMaskIntoConstraints = false
-        title.translatesAutoresizingMaskIntoConstraints = false
-        
-        contentView.addSubview(view)
-        view.addSubview(title)
-        view.backgroundColor = .gray
-        // Center the image vertically and place it near the leading
-        // edge of the view. Constrain its width and height to 50 points.
-        NSLayoutConstraint.activate([
-            view.leadingAnchor.constraint(equalTo: contentView.layoutMarginsGuide.leadingAnchor),
-            view.widthAnchor.constraint(equalToConstant: 50),
-            view.heightAnchor.constraint(equalToConstant: 50),
-            view.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-            
-            // Center the label vertically, and use it to fill the remaining
-            // space in the header view.
-            title.heightAnchor.constraint(equalToConstant: 30),
-            title.leadingAnchor.constraint(equalTo: view.trailingAnchor,
-                                           constant: 8),
-            title.trailingAnchor.constraint(equalTo:
-                                                contentView.layoutMarginsGuide.trailingAnchor),
-            title.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
-        ])
-    }
-}

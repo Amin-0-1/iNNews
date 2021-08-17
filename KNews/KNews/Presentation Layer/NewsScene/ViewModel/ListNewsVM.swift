@@ -35,8 +35,8 @@ class ListNewsVM : ListNewsType{
     private let monitor : NWPathMonitor!
     private var listOfNews = [NewsItem]()
     
-    init() {
-        listNewsUsecase = ListNewsUsecase(repo: Repo(remote: Remotedatasource()))
+    init(useCase: ListNewsUCType) {
+        listNewsUsecase = useCase
         
         loading = loadingSubject.asObservable().asDriver(onErrorJustReturn: true)
         showError = showErrorSubject.asObservable().asDriver(onErrorJustReturn: "")

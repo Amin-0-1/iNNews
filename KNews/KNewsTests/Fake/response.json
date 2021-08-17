@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 104939,
+    "articles": [
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "Mat Smith",
+            "title": "The Morning After: Microsoft unveils Windows 365, its Windows PC in the cloud",
+            "description": "Windows 365, announced today at the Microsoft Inspire conference, is a version of the OS that lives in the cloud. It's an easy-to-use virtual machine that lets you hop into your own Windows 10 (and eventually Windows 11) installation on any device, whether th…",
+            "url": "https://www.engadget.com/the-morning-after-microsoft-unveils-windows-365-its-windows-pc-in-the-cloud-111537814.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-07/d547ab00-e4a6-11eb-95dd-74878b12b284",
+            "publishedAt": "2021-07-15T11:15:37Z",
+            "content": "Windows 365, announced today at the Microsoft Inspire conference, is a version of the OS that lives in the cloud. It's an easy-to-use virtual machine that lets you hop into your own Windows 10 (and e… [+3789 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "Cherlynn Low",
+            "title": "How Arturia made its music-making software more accessible",
+            "description": "When visually impaired music producer Jason Dasent decided to buy a collection of instrument plugins from Arturia about four years ago, he did so despite his suspicion that the company’s tools wouldn’t be accessible. He was right. “At that point I couldn’t br…",
+            "url": "https://www.engadget.com/arturia-analog-lab-v-accessibility-mode-story-music-software-lack-assistive-160013048.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-07/e7b0b040-e413-11eb-bf1f-639a585d58e4",
+            "publishedAt": "2021-07-15T16:00:13Z",
+            "content": "When visually impaired music producer Jason Dasent decided to buy a collection of instrument plugins from Arturia about four years ago, he did so despite his suspicion that the companys tools wouldnt… [+7211 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "Valentina Palladino",
+            "title": "This week's best deals: $100 off Apple's iPad Air and more",
+            "description": "A bunch of gadgets went on sale this week, from Apple products to streaming devices. The latest iPad Air is $100 off at Amazon, bringing it down to an all-time low of $500. Plus, you can still grab a pair of AirPods Pro for $190 and this year's Apple TV 4K wi…",
+            "url": "https://www.engadget.com/weekly-tech-deals-apple-ipad-air-apple-tv-4k-2021-roku-sale-amazon-155028176.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-07/9c6c5c80-ebb4-11eb-ab75-2a2fb35c2158",
+            "publishedAt": "2021-07-23T15:50:28Z",
+            "content": "A bunch of gadgets went on sale this week, from Apple products to streaming devices. The latest iPad Air is $100 off at Amazon, bringing it down to an all-time low of $500. Plus, you can still grab a… [+7812 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "Andrew Tarantola",
+            "title": "Hitting the Books: How our lying eyes trick the brain into seeing motion during movies",
+            "description": "Visual media has come a long way since the first proto-human cave dwellers used the flickering of torch light to bring the hand-drawn art on their walls to life. Today, the pixel — despite its humble, low-resolution origins — sits as the current pinnacle of d…",
+            "url": "https://www.engadget.com/hitting-the-books-biography-of-the-pixel-alvy-ray-smith-mit-press-153048574.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-08/788a2840-f485-11eb-bfe9-2029a9502d00",
+            "publishedAt": "2021-08-07T15:30:48Z",
+            "content": "Visual media has come a long way since the first proto-human cave dwellers used the flickering of torch light to bring the hand-drawn art on their walls to life. Today, the pixel despite its humble, … [+10342 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "Valentina Palladino",
+            "title": "This week's best deals: $150 off Apple's MacBook Air M1 and more",
+            "description": "As July comes to a close, a number of laptops, earbuds, games and more have gone on sale across the web. Students planning their back-to-school shopping list have a few ways to save on Apple products — the latest MacBook Air M1 is $150 off at Amazon (that's b…",
+            "url": "https://www.engadget.com/weekly-tech-deals-apple-macbook-air-m1-ipad-air-nintendo-switch-mario-kart-live-home-circuit-153058942.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-07/345a2b10-f134-11eb-bffd-5007e607a9e2",
+            "publishedAt": "2021-07-30T15:30:58Z",
+            "content": "As July comes to a close, a number of laptops, earbuds, games and more have gone on sale across the web. Students planning their back-to-school shopping list have a few ways to save on Apple products… [+8392 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Matt Burgess, WIRED UK",
+            "title": "France Cracked Down on Google’s Ad Tech. What’s Next?",
+            "description": "The French Competition Agency has hit the company with $855 million in fines this year. The money is meaningless—but the changes could be profound.",
+            "url": "https://www.wired.com/story/france-google-ad-tech/",
+            "urlToImage": "https://media.wired.com/photos/6108638aab61ea369af751ac/191:100/w_1280,c_limit/Sec_google_fines_GettyImages-1270998731.jpg",
+            "publishedAt": "2021-08-03T13:00:00Z",
+            "content": "On June 7, Isabelle de Silva, a little-known French regulator, made global headlines. After a painstaking investigation, which de Silva describes as the most complex she has been involved in, the Fre… [+3809 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Will Knight",
+            "title": "John Deere Doubles Down on Silicon Valley and Robots",
+            "description": "The farm-equipment giant is buying Bear Flag Robotics, which makes autonomous tractors, marking its second big tech buy in four years.",
+            "url": "https://www.wired.com/story/john-deere-doubles-silicon-valley-robots/",
+            "urlToImage": "https://media.wired.com/photos/610c29e586407d6dcacb920a/191:100/w_1280,c_limit/Business-John-Deere-Robotics.jpg",
+            "publishedAt": "2021-08-05T21:00:20Z",
+            "content": "Theres much talk about bringing more Silicon Valley-style innovation to Americas heartland. But when the heartland needs tech, it still comes to Silicon Valley.\r\nJohn Deere Thursday said it would acq… [+4096 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Lauren Goode",
+            "title": "The Next Frontier for Phone Cameras: Stronger, Clearer Glass",
+            "description": "Corning has a developed a new version of Gorilla Glass optimized for smartphone camera lenses that it claims will lead to a boost in photo quality.",
+            "url": "https://www.wired.com/story/corning-gorilla-glass-dx-for-phone-camera-lenses/",
+            "urlToImage": "https://media.wired.com/photos/60f863bb2310feffcd558da2/191:100/w_1280,c_limit/Gear-Corning-Gorilla-Glass-DX-Camera-Lens-Cover_Option-2.jpg",
+            "publishedAt": "2021-07-22T12:30:00Z",
+            "content": "At some point in 2019, phone buyers started to just accept ugly camera modules. The remarkably good photos these cameras captured justified their bulbous three- or six-eyed designs. And in 2020, soci… [+4679 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Tim De Chant, Ars Technica",
+            "title": "Toyota Whiffed on EVs. Now It’s Trying to Slow Their Rise",
+            "description": "In a bid to protect its investments in hybrids and hydrogen fuel cells, the carmaker is lobbying against the transition to electric vehicles.",
+            "url": "https://www.wired.com/story/toyota-whiffed-on-electric-vehicles-now-trying-slow-their-rise/",
+            "urlToImage": "https://media.wired.com/photos/61008bf77d2c29922f639bf8/191:100/w_1280,c_limit/Business-Toyota-Lobbying-Against-EVs-185300987.jpg",
+            "publishedAt": "2021-07-28T19:00:00Z",
+            "content": "Executives at Toyota had a moment of inspiration when the company first developed the Prius. That moment, apparently, has long since passed.\r\nThe Prius was the world's first mass-produced hybrid car,… [+4647 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Albert Fox Cahn, Evan Selinger",
+            "title": "Apple's Privacy Mythology Doesn't Match Reality",
+            "description": "The company's claims cloak threats to millions of users' iCloud, iMessage, and facial verification data.",
+            "url": "https://www.wired.com/story/opinion-apples-privacy-mythology-doesnt-match-reality/",
+            "urlToImage": "https://media.wired.com/photos/61130273b3731b9702b93856/191:100/w_1280,c_limit/Opinion-Apple-Privacy-670947585.jpg",
+            "publishedAt": "2021-08-11T13:00:00Z",
+            "content": "In 2021, Apple has cast itself as the worlds superhero of privacy. Its leadership insists privacy has been central to our work from the very beginning and that its a fundamental human right. Its new … [+5158 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Jason Parham",
+            "title": "A People’s History of Black Twitter, Part I",
+            "description": "From #UKnowUrBlackWhen to #BlackLivesMatter, how a loose online network became a pop culture juggernaut, an engine of social justice, and a lens into the future.",
+            "url": "https://www.wired.com/story/black-twitter-oral-history-part-i-coming-together/",
+            "urlToImage": "https://media.wired.com/photos/60ef0cdb9c0558467e693d10/191:100/w_1280,c_limit/BlackTwitter_Part1_TopArt_image_6483441-(7).jpg",
+            "publishedAt": "2021-07-15T12:00:00Z",
+            "content": "Near the end of 2009, during the twilight months of a decade that saw the first Black man elected to the US presidency, Ashley Weatherspoon was chasing virality on a young app called Twitter. As the … [+3585 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Lauren Goode",
+            "title": "Folding Phones Are the New 3D TV",
+            "description": "Depending on who you ask, smartphones with folding screens—like the two models Samsung just released—are either a gimmick or the next frontier.",
+            "url": "https://www.wired.com/story/folding-phones-are-the-new-3d-tv/",
+            "urlToImage": "https://media.wired.com/photos/611431109d39f20094c96c94/191:100/w_1280,c_limit/Gear-Folding-Phones.jpg",
+            "publishedAt": "2021-08-12T11:00:00Z",
+            "content": "In a live-streamed media event on Wednesday morning, Samsung revealed a pair of new high-end phones, two sleek smartwatches, and a set of jelly-bean-like earbuds. If you werent paying close attention… [+3509 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Arielle Pardes",
+            "title": "Clubhouse Opens Its Doors. Is Anyone Rushing to Get In?",
+            "description": "Just a few days after ditching its invite-only status, the audio chat app had fewer than 500,000 new downloads.",
+            "url": "https://www.wired.com/story/clubhouse-opens-its-doors-is-anyone-rushing-to-get-in/",
+            "urlToImage": "https://media.wired.com/photos/60fb40df5419d8ad3f582cac/191:100/w_1280,c_limit/business_clubhouse_1287925346.jpg",
+            "publishedAt": "2021-07-27T11:00:00Z",
+            "content": "Among early adopters, the most coveted item this time last year was not hand sanitizer or Clorox wipes but a username on Clubhouse, the audio-only social media platform that had Silicon Valley abuzz … [+3365 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Gilad Edelman",
+            "title": "The Privacy Battle That Apple Isn’t Fighting",
+            "description": "California has begun enforcing a browser-level privacy setting, but you still can’t find that option in Safari or iOS.",
+            "url": "https://www.wired.com/story/global-privacy-control-apple/",
+            "urlToImage": "https://media.wired.com/photos/60f9f9ec9c7cd5dcccd9ee28/191:100/w_1280,c_limit/security-global-privacy.jpg",
+            "publishedAt": "2021-07-30T12:00:00Z",
+            "content": "For at least a decade, privacy advocates dreamed of a universal, legally enforceable Do not track setting. Now, at least in the most populous state in the US, that dream has become a reality. So why … [+3978 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Paul Starobin",
+            "title": "The Murky Merits of a Private Spy Registry",
+            "description": "From Black Cube to Fusion GPS to $50 spoofing tech, private espionage has recklessly boomed. Disclosure requirements could keep things in check.",
+            "url": "https://www.wired.com/story/the-murky-merits-of-a-private-spy-registry/",
+            "urlToImage": "https://media.wired.com/photos/60f1f7be54a6c0a895dea407/191:100/w_1280,c_limit/ideas-private-spies.jpg",
+            "publishedAt": "2021-07-17T11:00:00Z",
+            "content": "Years ago, while stationed in Moscow as the bureau chief for a major news magazine, I was approached by a representative of a multinational company and presented with a tantalizing offer. He said he … [+4820 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Garrett M. Graff",
+            "title": "Biden’s Cybersecurity Team Gets Crowded at the Top",
+            "description": "It’s a lot of talent, but the US now has five overlapping roles jockeying for limited budgets, authorities, and bureaucratic victories.",
+            "url": "https://www.wired.com/story/biden-cybersecurity-inglis-easterly-cisa-nsa/",
+            "urlToImage": "https://media.wired.com/photos/60ee2755a069f13cc7c0355e/191:100/w_1280,c_limit/Sec_CISA_GettyImages-1322884711.jpg",
+            "publishedAt": "2021-07-17T11:00:00Z",
+            "content": "(Disclosure: I have worked with nearly everyone mentioned in this article at the Aspen Institute, where most were engaged in the public-private Aspen Cybersecurity Group. I also coauthored a 2018book… [+4037 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Brian Barrett",
+            "title": "Space Jam and the Fury of an Algorithm Scorned",
+            "description": "The reboot—along with Netflix’s The Mitchells vs. the Machines—portray vengeful AIs as jilted geniuses. That revolution shouldn’t be televised.",
+            "url": "https://www.wired.com/story/space-jam-algorithm-mitchells-machines-ai-scorned/",
+            "urlToImage": "https://media.wired.com/photos/60fb28cdef873e5e2cd316cf/191:100/w_1280,c_limit/culture_space-jam-ai.jpg",
+            "publishedAt": "2021-07-24T11:00:00Z",
+            "content": "Say what you will about Space Jam: A New Legacy, but Don Cheadle really goes for it. He threatens, he cajoles, he chews the scenery with the enthusiasm of a rabid guinea pig. Just fully cannonballs i… [+3389 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Sidney Fussell",
+            "title": "The NYPD Had a Secret Fund for Surveillance Tools",
+            "description": "Documents reveal that police bought facial-recognition software, vans equipped with x-ray machines, and “stingray” cell site simulators—with no public oversight.",
+            "url": "https://www.wired.com/story/nypd-secret-fund-surveillance-tools/",
+            "urlToImage": "https://media.wired.com/photos/61118904d901275be20b845a/191:100/w_1280,c_limit/business_nypd_20342797212295.jpg",
+            "publishedAt": "2021-08-10T09:00:00Z",
+            "content": "New York City police bought a range of surveillance toolsincluding facial-recognition software, predictive policing software, vans equipped with x-ray machines to detect weapons, and stingray cell si… [+3531 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Meghan O'Gieblyn",
+            "title": "I Think an AI Is Flirting With Me. Is It OK If I Flirt Back?",
+            "description": "WIRED’s spiritual advice columnist on emotional connection, continental affairs, and the ulterior motives of chatbots.",
+            "url": "https://www.wired.com/story/i-think-ai-is-flirting-with-me-is-it-ok-if-i-flirt-back/",
+            "urlToImage": "https://media.wired.com/photos/611436479893e4dfa68a31f8/191:100/w_1280,c_limit/cloud-support-final.jpg",
+            "publishedAt": "2021-08-12T10:00:00Z",
+            "content": "SUPPORT REQUEST :\r\nI recently started talking to this chatbot on an app I downloaded. We mostly talk about music, food, and video gamesincidental stuffbut lately I feel like shes coming on to me. She… [+6849 chars]"
+        },
+        {
+            "source": {
+                "id": "wired",
+                "name": "Wired"
+            },
+            "author": "Amit Katwala, WIRED UK",
+            "title": "Mark Zuckerberg’s Metaverse Already Sucks",
+            "description": "It's not even here yet, but Facebook’s ambitions alone reveal an alarming lack of imagination and a less alarming love of tech buzzwords.",
+            "url": "https://www.wired.com/story/mark-zuckerberg-facebook-metaverse-sucks/",
+            "urlToImage": "https://media.wired.com/photos/6109cb90ef61821ca4f45f37/191:100/w_1280,c_limit/WIREUK_facebook_GettyImages-1197863837.jpg",
+            "publishedAt": "2021-08-04T12:00:00Z",
+            "content": "The Zuckerverse is coming. Just over a week ago, Facebook CEO Mark Zuckerberg announced, in a long interview with the Verge, that his social network is readying itself to become a metaverse company.\r… [+3687 chars]"
+        }
+    ]
+}

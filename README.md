@@ -1,4 +1,4 @@
-# Kadabra_iOS_Task
+# iNNews
 This repo for an iOS application that shows up the latest news
 
 

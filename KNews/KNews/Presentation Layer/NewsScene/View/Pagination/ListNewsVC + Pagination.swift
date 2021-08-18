@@ -13,6 +13,9 @@ extension ListNewsVC : UIScrollViewDelegate{
         let position = scrollView.contentOffset.y
         if position > (uiTableView.contentSize.height + 50) - (scrollView.frame.size.height) {
             
+            guard isSearching == false else { return }
+
+            
             guard ListNewsVC.isPaginating == false else {
                 // already paginating
                 return

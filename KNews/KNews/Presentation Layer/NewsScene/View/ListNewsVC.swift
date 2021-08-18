@@ -16,6 +16,7 @@ class ListNewsVC: UIViewController {
     @IBOutlet var uiEmptyImage: UIImageView!
     
     var viewModel : ListNewsType!
+    var isSearching = false
     private var bag: DisposeBag!
     
     
@@ -116,8 +117,10 @@ extension ListNewsVC: UITableViewDelegate{
         
         if text.isEmpty{
             viewModel.getCurrentNews()
+            isSearching = false
         }else{
             viewModel.searchNews(with: text)
+            isSearching = true
         }
 
 

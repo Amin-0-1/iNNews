@@ -3,10 +3,10 @@ This repo for an iOS application that shows up the latest news
 
 
 # Features
-* it shows up a bunch of latest and updated news with the pagination for better performance and very neat user interface
+* it shows up a bunch of latest and updated news with the pagination for better performance and a very neat user interface
 * it shows the details for every and each news item 
 * it gives you the ability to search for whatever you want
-* you can also navigate throught the source of the news itself
+* you can also navigate through the source of the news itself
 
 # 3<sup>rd</sup> parties libraries and tools
 * Xcode 
